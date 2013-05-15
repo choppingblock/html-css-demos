@@ -4,3 +4,59 @@
  * @author: Chopping Block (choppinblock.com)
  *
  */
+
+body {
+	background-color: #ccc;
+	font-family: "Helvetica Neue", Arial, Helvetica, Geneva, sans-serif;
+}
+
+.wrap {
+	width: 960px;
+	margin-left: auto;
+	margin-right: auto;
+	background-color: #fff;
+	padding-left: 10px;
+	padding-right: 10px;
+}
+
+header {
+	background-color: yellow;
+}
+
+footer {
+	background-color: black;
+}
+
+footer a{
+	color: white;
+}
+
+ul#navlist
+{
+margin-left: 0;
+padding-left: 0;
+white-space: nowrap;
+}
+
+#navlist li
+{
+display: inline;
+list-style-type: none;
+}
+
+#navlist a { padding: 3px 10px; }
+
+#navlist a:link, #navlist a:visited
+{
+color: #fff;
+background-color: #036;
+text-decoration: none;
+}
+
+#navlist a:hover
+{
+color: #fff;
+background-color: #369;
+text-decoration: none;
+}
+

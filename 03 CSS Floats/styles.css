@@ -404,6 +404,8 @@ table {
 
 /* Your styles go here */
 
+
+
 html {
 	height: 100%;
 }
@@ -415,6 +417,7 @@ body {
 
 .wrap {
 	width: 940px;
+	height: 100%;
 	margin-left: auto;
 	margin-right: auto;
 	padding-left: 10px;
@@ -424,11 +427,11 @@ body {
 
 header {
 	background-color: #f60;
-	overflow: hidden;
 }
 
-header h1 {
-	
+h1,h2 {
+	margin: 0;
+	padding: 0;
 }
 
 nav {
@@ -446,9 +449,11 @@ nav {
 	padding-right: 20px;
 }
 
+/*index_boxes.html*/
+
 .boxA {
-	width: 600px;
-	height: 600px;
+	width: 500px;
+	height: 500px;
 	background-color: #e0e0f1;
 }
 
@@ -459,8 +464,8 @@ nav {
 }
 
 .boxC {
-	width: 100px;
-	height: 100px;
+	width: 200px;
+	height: 200px;
 	background-color: #faedcd;
 }
 

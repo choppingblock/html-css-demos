@@ -10,7 +10,7 @@
 			<key>expanded</key>
 			<true/>
 			<key>name</key>
-			<string>05 CSS Offset</string>
+			<string>05 CSS Overflow</string>
 			<key>regexFolderFilter</key>
 			<string>!.*/(\.[^/]*|CVS|_darcs|_MTN|\{arch\}|blib|.*~\.nib|.*\.(framework|app|pbproj|pbxproj|xcode(proj)?|bundle))$</string>
 			<key>sourceDirectory</key>
@@ -26,7 +26,7 @@
 			<key>caret</key>
 			<dict>
 				<key>column</key>
-				<integer>18</integer>
+				<integer>20</integer>
 				<key>line</key>
 				<integer>6</integer>
 			</dict>
@@ -43,6 +43,6 @@
 	<key>showFileHierarchyDrawer</key>
 	<true/>
 	<key>windowFrame</key>
-	<string>{{1212, 419}, {1025, 950}}</string>
+	<string>{{583, 62}, {1165, 982}}</string>
 </dict>
 </plist>

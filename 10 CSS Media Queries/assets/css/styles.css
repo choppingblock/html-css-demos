@@ -402,4 +402,84 @@ table {
     border-spacing: 0;
 }
 
-/* Your styles go here */
+/* ==========================================================================
+   Your Styles Start Here
+   ========================================================================== */
+
+/**
+ * I prefer to load my web fonts first
+ */
+
+@font-face {
+	font-family: OpenSansExtraBold;
+	src: url('../fonts/OpenSans-ExtraBold.ttf')
+}
+
+@font-face {
+	font-family: GentiumBookRegular;
+	src: url('../fonts/GenBkBasR.ttf')
+}
+
+
+/**
+ * Now the rest of the styles
+ */
+
+html, body {
+	height: 100%;
+}
+
+body {
+	background-color: #ccc;
+}
+
+.wrap {
+	background-color: #fff;
+	width: 960px;
+	min-height: 100%;
+	margin-left: auto;
+	margin-right: auto;
+}
+
+h1, h2, h3, h4, h5, h6 {
+	margin: 0;
+	padding: 0;
+}
+
+h1 {
+	font-family: OpenSansExtraBold;
+	font-weight: normal;
+	font-style: normal;
+}
+
+h2 {
+	font-family: GentiumBookRegular;
+	font-weight: normal;
+	font-style: normal;
+	font-size: 1.2em;
+}
+
+/* Landscape phones and down */
+@media (max-width: 480px) {
+		
+}
+
+/* Landscape phone to portrait tablet */
+@media (max-width: 767px) {
+	
+}
+
+/* Portrait tablet to landscape and desktop */
+@media (min-width: 768px) and (max-width: 979px) {
+	
+}
+
+/* Large desktop */
+@media (min-width: 1200px) {
+	
+}
+
+
+
+
+

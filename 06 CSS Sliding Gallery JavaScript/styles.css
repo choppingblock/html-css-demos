@@ -403,3 +403,61 @@ table {
 }
 
 /* Your styles go here */
+
+html, body {
+	height: 100%;
+}
+
+body {
+	background-color: #ccc;
+}
+
+.wrap {
+	background-color: #fff;
+	width: 940px;
+	min-height: 100%;
+	margin-left: auto;
+	margin-right: auto;
+	padding-left: 10px;
+	padding-right: 10px;
+}
+
+h1, h2, h3, h4, h5, h6 {
+	margin: 0;
+	padding: 0;
+}
+
+header {
+	height: 150px;
+	position: relative;
+}
+
+header h1 {
+}
+
+header h2 {
+}
+
+.gallery {
+	width: 600px;
+	height: 420px;
+	overflow: auto;
+	margin-left: auto;
+	margin-right: auto;
+}
+
+.images {
+	width: 2400px;
+	height: 401px;
+}
+
+.gallery ul {
+	margin: 0;
+	padding: 0;
+}
+
+.gallery li {
+	display: inline;
+	float: left;
+}
+

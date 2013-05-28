@@ -3,7 +3,7 @@
 <plist version="1.0">
 <dict>
 	<key>currentDocument</key>
-	<string>index.html</string>
+	<string>assets/css/styles.css</string>
 	<key>documents</key>
 	<array>
 		<dict>
@@ -28,12 +28,28 @@
 				<key>column</key>
 				<integer>0</integer>
 				<key>line</key>
-				<integer>421</integer>
+				<integer>460</integer>
 			</dict>
+			<key>columnSelection</key>
+			<true/>
 			<key>firstVisibleColumn</key>
 			<integer>0</integer>
 			<key>firstVisibleLine</key>
-			<integer>399</integer>
+			<integer>411</integer>
+			<key>selectFrom</key>
+			<dict>
+				<key>column</key>
+				<integer>0</integer>
+				<key>line</key>
+				<integer>427</integer>
+			</dict>
+			<key>selectTo</key>
+			<dict>
+				<key>column</key>
+				<integer>0</integer>
+				<key>line</key>
+				<integer>460</integer>
+			</dict>
 		</dict>
 		<key>index.html</key>
 		<dict>

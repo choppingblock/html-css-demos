@@ -12,6 +12,8 @@
 	<meta name="description" content="" />
 	<meta name="keywords" content="" />
 	
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.5.2/jquery.min.js" type="text/javascript" charset="utf-8"></script>
+	
 	<link rel="stylesheet" href="styles.css" type="text/css" media="screen" charset="utf-8" />
 	
 	<style type="text/css" media="screen">		
@@ -29,13 +31,53 @@
 		
 		<div class="content">
 			
-			<ul>
-				<li><img src="images/mbr_130306_1000087.jpg" width="600" height="401" alt="Mbr 130306 1000087"></li>
-				<li><img src="images/mbr_130308_1000143-Edit.jpg" width="600" height="401" alt="Mbr 130308 1000143 Edit"></li>
-				<li><img src="images/mbr_130308_1000207-Edit.jpg" width="600" height="401" alt="Mbr 130308 1000207 Edit"></li>
-				<li><img src="images/mbr_130309_1000374-Edit.jpg" width="600" height="401" alt="Mbr 130309 1000374 Edit"></li>
-				<li><img src="images/mbr_130311_1000730.jpg" width="600" height="401" alt="Mbr 130311 1000730"></li>
-			</ul>
+			<div class="gallery">
+				<div class="images" id="images">
+					<ul>
+						<li><img src="images/mbr_130306_1000087.jpg" width="600" height="401" alt="Mbr 130306 1000087"></li>
+						<li><img src="images/mbr_130308_1000207-Edit.jpg" width="600" height="401" alt="Mbr 130308 1000207 Edit"></li>
+						<li><img src="images/mbr_130309_1000374-Edit.jpg" width="600" height="401" alt="Mbr 130309 1000374 Edit"></li>
+						<li><img src="images/mbr_130311_1000730.jpg" width="600" height="401" alt="Mbr 130311 1000730"></li>
+					</ul>
+				</div>
+			</div>
+			
+			<span id="previous">Previous</span>
+			<span id="next">Next</span>		
+			<script type="text/javascript" charset="utf-8">
+
+
+				//Selector for the pages
+				var pagetype = $('#images');
+				var pages = pagetype.width;
+
+				$("#previous").click( function(e){
+					var scrollLeft = $('#images').position().left - pagetype.outerWidth();
+					console.log('scrollLeft is: '+scrollLeft);
+
+					
+					if(scrollLeft < -1*(pages-1)*pagetype.outerWidth()){
+						scrollLeft = 0;
+					}
+					console.log($('#images').css('left'));
+					$('#images').animate({
+						left: scrollLeft
+					}, 200, 'swing');
+
+				});
+
+				$("#next").click( function(e){
+					var scrollLeft = $('#images').position().left + pagetype.outerWidth();
+					if(scrollLeft > 0){
+						scrollLeft = -1*(pages-1)*pagetype.outerWidth();
+					}
+					console.log($('#images').css('left'));
+					$('#images').animate({
+						left: scrollLeft
+					}, 200, 'swing');
+
+				});
+			</script>
 			
 		</div>
 		

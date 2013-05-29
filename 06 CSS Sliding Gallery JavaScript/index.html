@@ -12,13 +12,90 @@
 	<meta name="description" content="" />
 	<meta name="keywords" content="" />
 	
-	<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.5.2/jquery.min.js" type="text/javascript" charset="utf-8"></script>
 	
 	<link rel="stylesheet" href="styles.css" type="text/css" media="screen" charset="utf-8" />
 	
 	<style type="text/css" media="screen">		
 		/*local styles if any (quick tests and local only overrides)*/
 	</style>
+	
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.5.2/jquery.min.js" type="text/javascript" charset="utf-8"></script>
+	<script>
+	$(window).load (function() {
+		var theImage = $('ul li img');
+		var theWidth = theImage.width()
+		var index = 0;
+		
+		// //wrap into mother div
+		// $('ul').wrap('<div id="mother" />');					
+		// //assign height width and overflow hidden to mother
+		// $('#mother').css({
+		// 	width: function() {
+		// 	return theWidth;
+		//   }, 
+		// 	height: function() {
+		// 	return theImage.height();
+		//   }, 
+		// 	position: 'relative',
+		// 	overflow: 'hidden'  	
+		// });
+			//get total of image sizes and set as width for ul 
+		var totalWidth = theImage.length * theWidth;
+		$('#images').css({
+			width: function(){
+			return totalWidth;	
+		}				
+		});		
+
+		// $(theImage).each(		
+		// 		function(intIndex){				
+		// 		$(this).nextAll('a')
+		// 			.bind("click", function(){
+		// 				if($(this).is(".next"))	{
+		// 					$(this).parent('li').parent('ul').animate({
+		// 						"margin-left": (-(intIndex + 1) * theWidth)				
+		// 							}, 1000)	
+		// 					} else if($(this).is(".previous")){
+		// 					$(this).parent('li').parent('ul').animate({
+		// 						"margin-left": (-(intIndex - 1) * theWidth)				
+		// 					}, 1000)	
+		// 					} else if($(this).is(".startover")){
+		// 					$(this).parent('li').parent('ul').animate({
+		// 						"margin-left": (0)				
+		// 					}, 1000)
+		// 			}
+		// 			});//close .bind()									 
+		// 		});//close .each()
+		
+		$("#next").click(function(e){
+			// alert("next");
+			$('#images').animate({
+				"margin-left": (-(index + 1) * theWidth)				
+					}, 500, 'swing');
+				index++;
+		});
+		
+		$("#previous").click(function(e){
+			$('#images').animate({
+				"margin-left": (-(index - 1) * theWidth)				
+					}, 500, 'swing');
+				index--;
+		});
+		
+		
+
+	});//doc ready
+
+	function nextHandler() {
+		alert("nextHandler");
+		$('#images').animate({
+			"margin-left": (-(index + 1) * theWidth)				
+				}, 500, 'swing');
+			index++;
+	}
+
+	</script>
+	
 </head>
 <body>
 
@@ -42,42 +119,9 @@
 				</div>
 			</div>
 			
-			<span id="previous">Previous</span>
-			<span id="next">Next</span>		
-			<script type="text/javascript" charset="utf-8">
-
-
-				//Selector for the pages
-				var pagetype = $('#images');
-				var pages = pagetype.width;
-
-				$("#previous").click( function(e){
-					var scrollLeft = $('#images').position().left - pagetype.outerWidth();
-					console.log('scrollLeft is: '+scrollLeft);
-
-					
-					if(scrollLeft < -1*(pages-1)*pagetype.outerWidth()){
-						scrollLeft = 0;
-					}
-					console.log($('#images').css('left'));
-					$('#images').animate({
-						left: scrollLeft
-					}, 200, 'swing');
-
-				});
-
-				$("#next").click( function(e){
-					var scrollLeft = $('#images').position().left + pagetype.outerWidth();
-					if(scrollLeft > 0){
-						scrollLeft = -1*(pages-1)*pagetype.outerWidth();
-					}
-					console.log($('#images').css('left'));
-					$('#images').animate({
-						left: scrollLeft
-					}, 200, 'swing');
-
-				});
-			</script>
+			<a href="#" id="previous">Previous</a>
+			<a href="#" id="next">Next</a>
+			
 			
 		</div>
 		

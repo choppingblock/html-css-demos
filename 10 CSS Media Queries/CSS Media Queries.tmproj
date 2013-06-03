@@ -28,21 +28,37 @@
 				<key>column</key>
 				<integer>1</integer>
 				<key>line</key>
-				<integer>464</integer>
+				<integer>459</integer>
 			</dict>
+			<key>columnSelection</key>
+			<false/>
 			<key>firstVisibleColumn</key>
 			<integer>0</integer>
 			<key>firstVisibleLine</key>
-			<integer>437</integer>
+			<integer>382</integer>
+			<key>selectFrom</key>
+			<dict>
+				<key>column</key>
+				<integer>0</integer>
+				<key>line</key>
+				<integer>404</integer>
+			</dict>
+			<key>selectTo</key>
+			<dict>
+				<key>column</key>
+				<integer>1</integer>
+				<key>line</key>
+				<integer>459</integer>
+			</dict>
 		</dict>
 		<key>index.html</key>
 		<dict>
 			<key>caret</key>
 			<dict>
 				<key>column</key>
-				<integer>11</integer>
+				<integer>7</integer>
 				<key>line</key>
-				<integer>29</integer>
+				<integer>32</integer>
 			</dict>
 			<key>columnSelection</key>
 			<false/>
@@ -53,16 +69,16 @@
 			<key>selectFrom</key>
 			<dict>
 				<key>column</key>
-				<integer>2</integer>
+				<integer>1</integer>
 				<key>line</key>
-				<integer>24</integer>
+				<integer>22</integer>
 			</dict>
 			<key>selectTo</key>
 			<dict>
 				<key>column</key>
-				<integer>11</integer>
+				<integer>7</integer>
 				<key>line</key>
-				<integer>29</integer>
+				<integer>32</integer>
 			</dict>
 		</dict>
 	</dict>
@@ -74,6 +90,6 @@
 	<key>showFileHierarchyDrawer</key>
 	<true/>
 	<key>windowFrame</key>
-	<string>{{618, 325}, {1070, 908}}</string>
+	<string>{{1077, 510}, {1070, 908}}</string>
 </dict>
 </plist>

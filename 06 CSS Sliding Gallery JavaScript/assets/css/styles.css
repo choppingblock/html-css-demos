@@ -461,3 +461,13 @@ header h2 {
 	float: left;
 }
 
+.controls {
+	width: 600px;
+	margin-left: auto;
+	margin-right: auto;
+}
+
+.disabled {
+	color: #ccc;
+}
+

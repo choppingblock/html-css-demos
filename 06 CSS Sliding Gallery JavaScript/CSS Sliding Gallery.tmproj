@@ -3,7 +3,7 @@
 <plist version="1.0">
 <dict>
 	<key>currentDocument</key>
-	<string>index.html</string>
+	<string>assets/css/styles.css</string>
 	<key>documents</key>
 	<array>
 		<dict>
@@ -21,28 +21,43 @@
 	<integer>235</integer>
 	<key>metaData</key>
 	<dict>
+		<key>assets/css/styles.css</key>
+		<dict>
+			<key>caret</key>
+			<dict>
+				<key>column</key>
+				<integer>9</integer>
+				<key>line</key>
+				<integer>463</integer>
+			</dict>
+			<key>firstVisibleColumn</key>
+			<integer>0</integer>
+			<key>firstVisibleLine</key>
+			<integer>376</integer>
+		</dict>
 		<key>index.html</key>
 		<dict>
 			<key>caret</key>
 			<dict>
 				<key>column</key>
-				<integer>104</integer>
+				<integer>16</integer>
 				<key>line</key>
-				<integer>32</integer>
+				<integer>78</integer>
 			</dict>
 			<key>firstVisibleColumn</key>
 			<integer>0</integer>
 			<key>firstVisibleLine</key>
-			<integer>0</integer>
+			<integer>48</integer>
 		</dict>
 	</dict>
 	<key>openDocuments</key>
 	<array>
 		<string>index.html</string>
+		<string>assets/css/styles.css</string>
 	</array>
 	<key>showFileHierarchyDrawer</key>
 	<true/>
 	<key>windowFrame</key>
-	<string>{{261, 453}, {1185, 942}}</string>
+	<string>{{601, 185}, {1185, 942}}</string>
 </dict>
 </plist>

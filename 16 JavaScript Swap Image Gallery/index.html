@@ -12,16 +12,69 @@
 	<meta name="description" content="" />
 	<meta name="keywords" content="" />
 	
-	<link rel="stylesheet" href="styles.css" type="text/css" media="screen" charset="utf-8" />
+	<link rel="stylesheet" href="assets/css/styles.css" type="text/css" media="screen" charset="utf-8" />
 	
 	<style type="text/css" media="screen">		
 		/*local styles if any (quick tests and local only overrides)*/
 	</style>
+	
+	<script type="text/javascript" charset="utf-8">
+		
+		// Here is your list of larger images to preload
+		var aryImages = [
+			"assets/images/7290941882.jpg",
+			"assets/images/7358686198.jpg",
+			"assets/images/7376703526.jpg",
+			"assets/images/7376824606.jpg",
+			"assets/images/7444347856.jpg"
+		]
+		
+
+		  for (i=0; i < aryImages.length; i++) {
+		    var preload = new Image();
+		    preload.src = aryImages[i];
+		  }
+
+		  function swap(imgIndex) {
+		    document['imgMain'].src = aryImages[imgIndex];
+		  }
+		
+	</script>
 </head>
-<body>
+<body onLoad="swap(0);">
 
 	<div class="wrap" >
-		Project: 16 JavaScript Swap Image Gallery
+		
+		<header>
+			
+			<h1>JavaScript Swap Image Title</h1>
+			<h2>JavaScript Swap Image Tagline</h2>
+			
+		</header>
+			
+		<div class="content">
+			
+			<div class="thumbs" >
+
+				<ul>
+					<li><a href="#" onmouseover="javascript:swap(0)"><img src="assets/thumbnails/7290941882.jpg" width="75" height="75" alt="7290941882"></a></li>
+					<li><a href="#" onmouseover="javascript:swap(1)"><img src="assets/thumbnails/7358686198.jpg" width="75" height="75" alt="7358686198"></a></li>
+					<li><a href="#" onmouseover="javascript:swap(2)"><img src="assets/thumbnails/7376703526.jpg" width="75" height="75" alt="7376703526"></a></li>
+					<li><a href="#" onmouseover="javascript:swap(3)"><img src="assets/thumbnails/7376824606.jpg" width="75" height="75" alt="7376824606"></a></li>
+					<li><a href="#" onmouseover="javascript:swap(4)"><img src="assets/thumbnails/7444347856.jpg" width="75" height="75" alt="7444347856"></a></li>
+				</ul>
+
+			</div>
+
+			<div class="preview">
+
+				<img name="imgMain" src="assets/images/7290941882.jpg" width="612" height="612" alt="7290941882">
+
+
+			</div>
+			
+		</div>
+			
 	</div>
 	
 </body>

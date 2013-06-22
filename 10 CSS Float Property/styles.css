@@ -84,7 +84,6 @@ header a:hover {
 .navlist {
 	padding: 3px 16px;
 	margin-top: 0;
-	
 	font-size: 0.8em;
 	background-color: #f60;
 	font-weight: bold;
@@ -99,7 +98,6 @@ header a:hover {
 .navlist li a {
 	padding: 3px 0.5em;
 	margin-left: 1px;
-	
 	background: #ffce76;
 	text-decoration: none;
 }
@@ -109,7 +107,7 @@ header a:hover {
 }
 
 .navlist li a:visited {
-	color: #667;
+	color: #ff9a56;
 }
 
 .navlist li a:hover {

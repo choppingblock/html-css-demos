@@ -1,0 +1,160 @@
+/* 
+ * styles.css
+ *
+ * @author: Chopping Block (choppinblock.com)
+ *
+ */
+
+/* ==========================================================================
+   Refrence
+
+	--- tag selector ---
+	<h1>hello world</h1> in your html is styled with:
+	
+	h1 {
+		color: orange;
+	}
+	
+	--- class selector ---
+	<div class="foo">hello world</div> in your html is styled with:
+
+	.foo {
+		color: orange;
+	}
+	
+	--- id selector ---
+	<div id="foo">hello world</div> in your html is styled with:
+
+	#foo {
+		color: orange;
+	}
+
+   ========================================================================== */
+
+
+/* ==========================================================================
+   Your styles go here
+   ========================================================================== */
+
+html, body {
+	height: 100%;
+}
+
+body {
+	font-family: "Helvetica Neue", Arial, Helvetica, Geneva, sans-serif;
+	background-color: #ccc;
+	margin: 0;
+	padding: 0;
+}
+
+.wrap {
+	max-width: 960px;
+	background-color: #fff;
+	min-height: 100%;
+	margin-left: auto;
+	margin-right: auto;
+	padding: 0 8px;
+}
+
+header {
+	background-color: #808080;
+	color: white;
+	padding: 1.2em;
+}
+
+header h1, header h2 {
+	margin: 0;
+	padding: 0;
+}
+
+header h2 {
+	font-weight: normal;
+	font-size: 1em;
+}
+
+header a {
+	text-decoration: none;
+	color: #ffce76;
+}
+
+header a:hover {
+	text-decoration: underline;
+}
+
+.navlist {
+	padding: 3px 16px;
+	margin-top: 0;
+	font-size: 0.8em;
+	background-color: #808080;
+	font-weight: bold;
+}
+
+.navlist li {
+	list-style: none;
+	margin: 0;
+	display: inline;
+}
+
+.navlist li a {
+	padding: 3px 0.5em;
+	margin-left: 1px;
+	background: #ccc;
+	text-decoration: none;
+}
+
+.navlist li a:link {
+	color: #000;
+}
+
+.navlist li a:visited {
+	color: #667;
+}
+
+.navlist li a:hover {
+	color: #808080;
+	background-color: #e9e8e8;
+}
+
+.navlist li a#current {
+	background: white;
+}
+
+
+.content {
+	padding-top: 4em;
+}
+
+.content h2{
+	margin: 0;
+	padding: 0;
+}
+
+/*.gallery {
+	width: 600px;
+	height: 420px;
+	overflow: auto;
+	margin-left: auto;
+	margin-right: auto;
+}
+
+.images {
+	width: 2400px;
+	height: 401px;
+}
+
+.gallery ul {
+	margin: 0;
+	padding: 0;
+}
+
+.gallery li {
+	display: inline;
+	float: left;
+}*/
+
+
+
+
+
+
+

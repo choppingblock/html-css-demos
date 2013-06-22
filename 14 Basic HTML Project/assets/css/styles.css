@@ -492,7 +492,7 @@ header a:hover {
 
 
 .content {
-
+	padding: 0 20px;
 }
 
 .content h2{
@@ -505,25 +505,17 @@ header a:hover {
 	margin-right: 8px;
 }
 
-/*.sidebar {
-	border: 1px solid #333;
-	width: 200px;
-	float: left;
+.content img {
+	vertical-align: top;
+	margin-top: 2px;
 }
 
-.news {
-	border: 1px solid #333;
-	margin-left: 210px;;
-}*/
-
-.news img {
-	width: 160px;
-	height: 160px;
+p {
+	margin-top: 0;
 }
 
 .footerlist {
-	margin-left: 0;
-	padding: 3px 0;
+	padding: 3px 6px;
 	font-size: 0.9em;
 	background-color: gray;
 }

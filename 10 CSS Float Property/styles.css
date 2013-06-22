@@ -1,0 +1,172 @@
+/* 
+ * styles.css
+ *
+ * @author: Chopping Block (choppinblock.com)
+ *
+ */
+
+/* ==========================================================================
+   Refrence
+
+	--- tag selector ---
+	<h1>hello world</h1> in your html is styled with:
+	
+	h1 {
+		color: orange;
+	}
+	
+	--- class selector ---
+	<div class="foo">hello world</div> in your html is styled with:
+
+	.foo {
+		color: orange;
+	}
+	
+	--- id selector ---
+	<div id="foo">hello world</div> in your html is styled with:
+
+	#foo {
+		color: orange;
+	}
+
+   ========================================================================== */
+
+
+/* ==========================================================================
+   Your styles go here
+   ========================================================================== */
+
+html, body {
+	height: 100%;
+}
+
+body {
+	font-family: "Helvetica Neue", Arial, Helvetica, Geneva, sans-serif;
+	background-color: #ccc;
+	margin: 0;
+	padding: 0;
+}
+
+.wrap {
+	max-width: 960px;
+	background-color: #fff;
+	min-height: 100%;
+	margin-left: auto;
+	margin-right: auto;
+	padding: 0 8px;
+}
+
+header {
+	background-color: #f60;
+	color: white;
+	padding: 1.2em;
+}
+
+header h1, header h2 {
+	margin: 0;
+	padding: 0;
+}
+
+header h2 {
+	font-weight: normal;
+	font-size: 1em;
+}
+
+header a {
+	text-decoration: none;
+	color: #ffce76;
+}
+
+header a:hover {
+	text-decoration: underline;
+}
+
+.navlist {
+	padding: 3px 16px;
+	margin-top: 0;
+	
+	font-size: 0.8em;
+	background-color: #f60;
+	font-weight: bold;
+}
+
+.navlist li {
+	list-style: none;
+	margin: 0;
+	display: inline;
+}
+
+.navlist li a {
+	padding: 3px 0.5em;
+	margin-left: 1px;
+	
+	background: #ffce76;
+	text-decoration: none;
+}
+
+.navlist li a:link {
+	color: #f60;
+}
+
+.navlist li a:visited {
+	color: #667;
+}
+
+.navlist li a:hover {
+	color: #b74900;
+	background-color: #feeccc;
+}
+
+.navlist li a#current {
+	background: white;
+}
+
+
+.content {
+	
+}
+
+.content h2{
+	margin: 0;
+	padding: 0;
+}
+
+/*.sidebar {
+	border: 1px solid #333;
+	width: 200px;
+	float: left;
+}
+
+.news {
+	border: 1px solid #333;
+	margin-left: 210px;;
+}*/
+
+.news img {
+	width: 160px;
+	height: 160px;
+}
+
+.footerlist {
+	margin-left: 0;
+	padding: 3px 0;
+	font-size: 0.9em;
+	background-color: gray;
+}
+
+.footerlist li {
+	list-style-type: none;
+	display: inline;
+	margin-left: 1em;
+}
+
+.footerlist li a {
+	text-decoration: none;
+	color: white;
+}
+
+.footerlist li a:hover {
+	text-decoration: underline;
+}
+
+

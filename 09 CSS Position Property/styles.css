@@ -1,0 +1,129 @@
+/* 
+ * styles.css
+ *
+ * @author: Chopping Block (choppinblock.com)
+ *
+ */
+
+/* ==========================================================================
+   Refrence
+
+	--- tag selector ---
+	<h1>hello world</h1> in your html is styled with:
+	
+	h1 {
+		color: orange;
+	}
+	
+	--- class selector ---
+	<div class="foo">hello world</div> in your html is styled with:
+
+	.foo {
+		color: orange;
+	}
+	
+	--- id selector ---
+	<div id="foo">hello world</div> in your html is styled with:
+
+	#foo {
+		color: orange;
+	}
+
+   ========================================================================== */
+
+
+/* ==========================================================================
+   Your styles go here
+   ========================================================================== */
+
+html, body {
+	height: 100%;
+}
+
+body {
+	font-family: "Helvetica Neue", Arial, Helvetica, Geneva, sans-serif;
+	background-color: #ccc;
+	margin: 0;
+	padding: 0;
+}
+
+.wrap {
+	max-width: 960px;
+	background-color: #fff;
+	min-height: 100%;
+	margin-left: auto;
+	margin-right: auto;
+	padding: 0 8px;
+}
+
+header {
+	background-color: #f60;
+	color: white;
+	margin-bottom: 1em;
+}
+
+header h1, header h2 {
+	margin: 0;
+	padding: 0;
+}
+
+header h2 {
+	font-weight: normal;
+	font-size: 1em;
+}
+
+header a {
+	text-decoration: none;
+	color: #ffce76;
+}
+
+header a:hover {
+	text-decoration: underline;
+}
+
+.content {
+	border: 1px solid #333;
+}
+
+.content h2{
+	margin: 0;
+	padding: 0;
+}
+
+.box-a {
+	border: 6px solid #156a87;
+	background-color: #a0dbef;
+	width: 540px;
+	height: 100px;
+	font-size: 4em;
+}
+
+.navlist {
+}
+
+.navlist li {
+	
+}
+
+.footerlist {
+	margin-left: 0;
+	padding: 3px 0;
+	font-weight: bold;
+	font-size: 0.9em;
+	background-color: gray;
+}
+
+.footerlist li {
+	list-style-type: none;
+	display: inline;
+	margin-left: 1em;
+}
+
+.footerlist li a {
+	text-decoration: none;
+	color: white;
+}
+
+.footerlist li a:hover {
+	text-decoration: underline;
+}

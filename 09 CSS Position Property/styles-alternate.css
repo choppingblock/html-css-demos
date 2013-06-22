@@ -1,0 +1,157 @@
+/* 
+ * styles.css
+ *
+ * @author: Chopping Block (choppinblock.com)
+ *
+ */
+
+/* ==========================================================================
+   Refrence
+
+	--- tag selector ---
+	<h1>hello world</h1> in your html is styled with:
+	
+	h1 {
+		color: orange;
+	}
+	
+	--- class selector ---
+	<div class="foo">hello world</div> in your html is styled with:
+
+	.foo {
+		color: orange;
+	}
+	
+	--- id selector ---
+	<div id="foo">hello world</div> in your html is styled with:
+
+	#foo {
+		color: orange;
+	}
+
+   ========================================================================== */
+
+
+/* ==========================================================================
+   Your styles go here
+   ========================================================================== */
+
+html, body {
+	height: 100%;
+}
+
+body {
+	font-family: "Helvetica Neue", Arial, Helvetica, Geneva, sans-serif;
+	margin: 0;
+	padding: 0;
+}
+
+.wrap {
+	margin-left: 240px;
+	margin-top: 20px;
+	margin-right: 40px;
+}
+
+header {
+	position: fixed;
+	top: 20px;
+	left: 20px;
+	width: 200px;
+}
+
+header h1, header h2 {
+	font-size: 1.5em;
+	margin: 0;
+	padding: 0;
+}
+
+header h2 {
+	font-weight: normal;
+	font-size: 1em;
+}
+
+header a {
+	text-decoration: none;
+	color: #cccccc;
+}
+
+header a:hover {
+	text-decoration: underline;
+}
+
+.content {
+	
+}
+
+.content h2{
+	margin: 0;
+	padding: 0;
+}
+
+.imagelist {
+	padding: 0;
+	margin: 0;
+}
+
+.imagelist li {
+	list-style-type: none;
+	display: inline-box;
+	margin-bottom: 1em;;
+}
+
+.imagelist figure {
+	margin: 0;
+	padding: 0;
+}
+
+figcaption {
+	margin: 0;
+	padding: 0;
+	font-size: 0.9em;
+	color: #999;
+}
+
+.imagelist img {
+	max-width: 100%;
+	border: 1px solid #ccc;
+}
+
+.navlist {
+	padding: 0;
+}
+
+.navlist li {
+	list-style-type: none;
+}
+
+.navlist li a#current {
+	color: red;
+}
+
+.footerlist {
+	position: fixed;
+	bottom: 0px;
+	left: 0px;
+	padding: 4px 0 4px 0;
+	margin: 0;
+	font-size: 0.9em;
+	background-color: #fff;
+	border-top: 1px solid #333;
+	width: 100%;
+	text-align: right;
+}
+
+.footerlist li {
+	list-style-type: none;
+	display: inline;
+	margin-right: 1em;
+}
+
+.footerlist li a {
+	text-decoration: none;
+	color: #333;
+}
+
+.footerlist li a:hover {
+	text-decoration: underline;
+}

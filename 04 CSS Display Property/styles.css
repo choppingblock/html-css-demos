@@ -1,0 +1,72 @@
+/* 
+ * styles.css
+ *
+ * @author: Chopping Block (choppinblock.com)
+ *
+ */
+
+/* ==========================================================================
+   Refrence
+
+	--- tag selector ---
+	<h1>hello world</h1> in your html is styled with:
+	
+	h1 {
+		color: orange;
+	}
+	
+	--- class selector ---
+	<div class="foo">hello world</div> in your html is styled with:
+
+	.foo {
+		color: orange;
+	}
+	
+	--- id selector ---
+	<div id="foo">hello world</div> in your html is styled with:
+
+	#foo {
+		color: orange;
+	}
+
+   ========================================================================== */
+
+
+/* ==========================================================================
+   Your styles go here
+   ========================================================================== */
+
+/*
+
+h1 {
+	border: 1px solid #333;
+	display: inline;
+}
+
+p.tagline {
+	border: 1px solid #333;
+	display: inline;
+}
+
+li {
+	border: 1px solid #333;
+	display: inline;
+}
+
+img {
+	border: 1px solid #333;
+	display: block;
+}
+
+h2 {
+	border: 1px solid #333;
+	display: inline;
+	color: red;
+}
+
+p {
+	border: 1px solid #333;
+	display: inline;
+}
+
+*/

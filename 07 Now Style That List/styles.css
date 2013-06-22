@@ -1,0 +1,107 @@
+/* 
+ * styles.css
+ *
+ * @author: Chopping Block (choppinblock.com)
+ *
+ */
+
+/* ==========================================================================
+   Refrence
+
+	--- tag selector ---
+	<h1>hello world</h1> in your html is styled with:
+	
+	h1 {
+		color: orange;
+	}
+	
+	--- class selector ---
+	<div class="foo">hello world</div> in your html is styled with:
+
+	.foo {
+		color: orange;
+	}
+	
+	--- id selector ---
+	<div id="foo">hello world</div> in your html is styled with:
+
+	#foo {
+		color: orange;
+	}
+
+   ========================================================================== */
+
+
+/* ==========================================================================
+   Your styles go here
+   ========================================================================== */
+
+body {
+	font-family: "Helvetica Neue", Arial, Helvetica, Geneva, sans-serif;
+}
+
+.header {
+	background-color: #f60;
+	color: white;
+	padding: 1.2em;
+	margin-bottom: 1em;
+}
+
+.header h1, .header h2 {
+	margin: 0;
+	padding: 0;
+}
+
+.header h2 {
+	font-weight: normal;
+	font-size: 1em;
+}
+
+.header a {
+	text-decoration: none;
+	color: #ffce76;
+}
+
+.header a:hover {
+	text-decoration: underline;
+}
+
+/*From demo at http://css.maxdesign.com.au/listamatic/horizontal06.htm*/
+
+/*
+
+#navlist {
+	margin: 0;
+	padding: 0 0 20px 10px;
+	border-bottom: 1px solid #000;
+}
+
+#navlist ul, #navlist li {
+	margin: 0;
+	padding: 0;
+	display: inline;
+	list-style-type: none;
+}
+
+#navlist a:link, #navlist a:visited {
+	float: left;
+	line-height: 14px;
+	font-weight: bold;
+	margin: 0 10px 4px 10px;
+	text-decoration: none;
+	color: #999;
+}
+
+#navlist a:link#current, #navlist a:visited#current, #navlist a:hover {
+	border-bottom: 4px solid #000;
+	padding-bottom: 2px;
+	background: transparent;
+	color: #000;
+}
+
+#navlist a:hover {
+	color: #000;
+}
+
+*/
+

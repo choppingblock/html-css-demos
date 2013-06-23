@@ -4,7 +4,7 @@
 	<meta charset="utf-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
 	<!-- The title of your page, and the bookmark title -->
-    <title>CSS3 Transitions</title>
+    <title>jQuery Basic Project</title>
 	<!-- If your site is responsive, you will want this  -->
     <!-- <meta name="viewport" content="width=device-width, initial-scale=1.0"> -->
 	<meta name="author" content="The Chopping Block, Inc." />
@@ -20,23 +20,40 @@
 	<style type="text/css" media="screen">		
 		/*local styles if any (quick tests and local only overrides)*/
 	</style>
+	
 </head>
 <body>
 
 	<div class="wrap" >
 		
 		<header>
-			<h1>CSS3 Transitions</h1>
-			<h2><a href="http://alistapart.com/article/understanding-css3-transitions" onclick="window.open(this.href); return false;">Understanding CSS3 Transitions</a> and the fantastic <a href="http://css3.bradshawenterprises.com/transitions/" onclick="window.open(this.href); return false;">CSS Transitions</a> at bradshawenterprises.com.</h2>
+			<h1>jQuery Basic Project</h1>
+			<h2>Nice work! You just created a basic jQuery html project.</h2>
 		</header>
 		
 		<div class="content">
 			
-			<a href="#" class="button-a">Transition Me</a>
+			<h3>Notes:</h3>
+			<ul>
+				<li>This is a basic project scaffold.</li>
+				<li>Will load jQuery from server if posted online, has local fallback.</li>
+				<li>Some basic queries will be posted here soon.</li>
+			</ul>
 			
 		</div>
 		
 	</div>
+	
+	<!-- Best practice is to keep the script at the bottom of the body -->
+	
+	<script src="//ajax.googleapis.com/ajax/libs/jquery/1.10.1/jquery.min.js"></script>
+    <script>window.jQuery || document.write('<script src="assets/js/jquery-1.10.1.min.js"><\/script>')</script>
+
+	<script type="text/javascript" charset="utf-8">
+		
+		alert( "welcome" );
+		
+	</script>
 	
 </body>
 </html>

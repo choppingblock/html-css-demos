@@ -4,7 +4,7 @@
 	<meta charset="utf-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
 	<!-- The title of your page, and the bookmark title -->
-    <title>CSS3 Transitions</title>
+    <title>ShadowBox Gallery</title>
 	<!-- If your site is responsive, you will want this  -->
     <!-- <meta name="viewport" content="width=device-width, initial-scale=1.0"> -->
 	<meta name="author" content="The Chopping Block, Inc." />
@@ -20,22 +20,31 @@
 	<style type="text/css" media="screen">		
 		/*local styles if any (quick tests and local only overrides)*/
 	</style>
+	
+	<link rel="stylesheet" type="text/css" href="assets/shadowbox/shadowbox.css">
+	<script type="text/javascript" src="assets/shadowbox/shadowbox.js"></script>
+	<script type="text/javascript">
+	Shadowbox.init();
+	</script>
+	
 </head>
 <body>
 
 	<div class="wrap" >
 		
 		<header>
-			<h1>CSS3 Transitions</h1>
-			<h2><a href="http://alistapart.com/article/understanding-css3-transitions" onclick="window.open(this.href); return false;">Understanding CSS3 Transitions</a> and the fantastic <a href="http://css3.bradshawenterprises.com/transitions/" onclick="window.open(this.href); return false;">CSS Transitions</a> at bradshawenterprises.com.</h2>
+			<h1><a href="http://www.shadowbox-js.com" onclick="window.open(this.href); return false;">ShadowBox</a> Gallery</h1>
+			<h2>Fantastic JavaScript Lightbox, great example of <a href="http://www.shadowbox-js.com/usage.html" onclick="window.open(this.href); return false;">well documented</a> frameworks.</h2>
 		</header>
 		
 		<div class="content">
 			
-			<a href="#" class="button-a">Transition Me</a>
+			<ul>
+				<!-- rel="shadowbox" -->
+				<li><a href="assets/images/matthewRichmond_HighlineFacingWest130309_1000374.jpg" >Highline Photo</a></li>
+			</ul>
 			
 		</div>
-		
 	</div>
 	
 </body>

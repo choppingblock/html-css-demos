@@ -1,0 +1,135 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+	<!-- The title of your page, and the bookmark title -->
+    <title>jQuery CSS Overflow Gallery</title>
+	<!-- If your site is responsive, you will want this  -->
+    <!-- <meta name="viewport" content="width=device-width, initial-scale=1.0"> -->
+	<meta name="author" content="The Chopping Block, Inc." />
+	<meta name="geo.country" content="US" />
+	<meta name="dc.language" content="en" />
+	<meta name="description" content="" />
+	<meta name="keywords" content="" />
+
+    <!-- Place favicon.ico and apple-touch-icon.png in the root directory -->
+		
+	<link rel="stylesheet" href="assets/css/styles.css" type="text/css" media="screen" charset="utf-8" />
+	
+	<style type="text/css" media="screen">		
+		/*local styles if any (quick tests and local only overrides)*/
+	</style>
+	
+</head>
+<body>
+
+	<div class="wrap" >
+		
+		<header>
+			<h1>jQuery CSS Overflow Gallery</h1>
+			<h2>Everybody wants to get rid of the scrollbar, for creative types.</h2>
+		</header>
+		
+		<nav class="navcontainer">
+			<ul class="navlist">
+				<li id="active"><a href="#" id="current">Link 1</a></li>
+				<li><a href="#">Link 2</a></li>
+				<li><a href="#">Link 3</a></li>
+				<li><a href="#">Link 4</a></li>
+				<li><a href="#">Link 5</a></li>
+			</ul>
+		</nav>
+		
+		<div class="content">
+			
+			<div class="gallery">
+				<div class="images" id="images">			
+					<ul>
+						<li><img src="assets/images/matthewRichmond_HighlineFacingWest130309_1000374.jpg" width="600" height="401" alt="MatthewRichmond HighlineFacingWest130309 1000374"></li>
+						<li><img src="assets/images/matthewRichmond_BrooklynBridge_130308_1000207.jpg" width="600" height="401" alt="MatthewRichmond BrooklynBridge 130308 1000207"></li>
+						<li><img src="assets/images/matthewRichmond_BrooklynNight_130311_1000730.jpg" width="600" height="401" alt="MatthewRichmond BrooklynNight 130311 1000730"></li>
+						<li><img src="assets/images/matthewRichmond_NightScaffold_130306_1000087.jpg" width="600" height="401" alt="MatthewRichmond NightScaffold 130306 1000087"></li>
+					</ul>
+				</div>
+			</div>
+			
+			<div class="controls">
+				<a href="#" id="previous">Previous</a>
+				<a href="#" id="next">Next</a>
+			</div>
+			
+		</div>
+		
+	</div>
+	
+	<!-- Best practice is to keep the script at the bottom of the body -->
+	
+	<script src="//ajax.googleapis.com/ajax/libs/jquery/1.10.1/jquery.min.js"></script>
+    <script>window.jQuery || document.write('<script src="assets/js/jquery-1.10.1.min.js"><\/script>')</script>
+
+	<script type="text/javascript" charset="utf-8">
+		
+		$(window).load (function() {
+		
+		var theImage = $('ul li img');
+		var theWidth = theImage.width()
+		var index = 0;
+			
+		//get total of image sizes and set as width for ul 
+		var totalWidth = theImage.length * theWidth;
+		$('#images').css({
+			width: function(){
+			return totalWidth;	
+		}				
+		});		
+		
+		$("#next").click(function(e){
+			// alert("next");
+			
+			if (index < ($(theImage).length -1) ) {
+			
+				$('#images').animate({
+				"margin-left": (-(index + 1) * theWidth)				
+					}, 500, 'swing');
+				index++;
+				updateControls();
+			};
+		});
+		
+		$("#previous").click(function(e){
+			
+			if (index > 0 ) {
+			
+			$('#images').animate({
+				"margin-left": (-(index - 1) * theWidth)				
+					}, 500, 'swing');
+				index--;
+				updateControls();
+			};
+		});
+		
+		function updateControls () {
+			
+			if (index <= 0) {
+				$("#previous").addClass("disabled");
+			} else {
+				$("#previous").removeClass("disabled");
+			}
+			
+			if (index >= ($(theImage).length -1)) {
+				$("#next").addClass("disabled");
+			} else {
+				$("#next").removeClass("disabled");
+			}
+				
+		}
+
+		updateControls();
+		
+		});//doc ready
+		
+	</script>
+	
+</body>
+</html>
